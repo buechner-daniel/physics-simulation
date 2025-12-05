@@ -9,6 +9,10 @@ public class Vector2D {
         this.y = y;
     }
 
+    public static Vector2D zero() {
+        return new Vector2D(0, 0);
+    }
+
     public Vector2D scale(double scalar) {
         return new Vector2D(this.x * scalar, this.y * scalar);
     }
